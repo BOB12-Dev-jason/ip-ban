@@ -14,7 +14,7 @@ ban_lock = threading.Lock()
 def ban(ip, bantime):
     print("%s 주소를 차단했습니다." % ip)
     os.system("iptables -A INPUT -s %s -j DROP" % ip)
-    banned_ips[ip] = bantime+30
+    banned_ips[ip] = bantime+300
 
 
 def unban(ip):
