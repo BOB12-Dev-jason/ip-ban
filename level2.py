@@ -3,8 +3,6 @@ import os
 import re
 import subprocess
 
-messages = []
-
 filepath = "/var/log/auth.log"
 failNum = {}  # {ip주소: 실패 횟수}
 
